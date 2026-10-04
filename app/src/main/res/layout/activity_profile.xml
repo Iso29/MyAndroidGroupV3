@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#BA4141">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/brandColor">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/addContainer"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:cardElevation="48dp"
+            android:layout_marginHorizontal="36dp"
+            android:layout_marginVertical="44dp"
+            app:cardCornerRadius="24dp">
+
+            <ImageView
+                android:id="@+id/addImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginVertical="48dp"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/addIcon"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                app:tint="@color/black"
+                tools:src="@drawable/ic_settings"
+                android:layout_gravity="end"
+                android:layout_margin="24dp"/>
+
+            <TextView
+                android:id="@+id/addText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="salam"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginVertical="16dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="bottom|center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/testButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test it!"
+            android:elevation="56dp"
+            android:layout_marginHorizontal="36dp"
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:backgroundTint="#0C2323"/>
+
+        <EditText
+            android:id="@+id/userNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="36dp"
+            android:background="@drawable/bg_input_field"
+            android:backgroundTint="@color/white"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="24dp"
+            android:hint="Enter username"
+            android:maxLines="1"
+            android:layout_marginVertical="12dp"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_settings"
+            android:drawableEnd="@drawable/ic_alert"
+            android:alpha="0.8"/>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:max="100"
+            android:progress="60"
+            android:secondaryProgress="80"
+            android:progressDrawable="@drawable/progress_linear" />
+
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/circler_progressView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:max="100"
+            android:progress="20"
+            app:trackThickness="4dp"
+            app:trackCornerRadius="24dp"
+            app:indicatorColor="#0288D1"
+            app:trackColor="#E1F5FE"
+
+            app:indicatorDirectionLinear = "rightToLeft"
+            app:indicatorTrackGapSize="5dp"
+            app:trackStopIndicatorSize="21dp"
+            android:layout_marginStart="36dp"/>
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/linear_progressView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:max="100"
+            android:progress="20"
+            app:trackThickness="4dp"
+            app:trackCornerRadius="24dp"
+            app:indicatorColor="#0288D1"
+            app:trackColor="#E1F5FE"
+            app:indicatorDirectionLinear = "startToEnd"
+            app:indicatorTrackGapSize="2dp"
+
+            android:layout_marginHorizontal="36dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

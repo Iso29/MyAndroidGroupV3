@@ -14,6 +14,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
+            android:launchMode="standard"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +22,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="My Home"
+            android:launchMode="singleTask"
+            android:taskAffinity="${applicationId}.home" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
